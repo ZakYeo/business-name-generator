@@ -15,7 +15,7 @@
     "test": "jest --runInBand",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "test:openai": "jest --runInBand --runTestsByPath test/openai-smoke.spec.ts",
+    "test:openai": "jest --runInBand --testRegex \"openai-smoke\\.integration\\.ts$\"",
     "prepare": "husky"
   },
   "repository": {
